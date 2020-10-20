@@ -1,0 +1,21 @@
+@media screen and (max-width: 1020px) {
+  #services {
+    .container {
+      padding: 39px 40px 25px 40px;
+      .services_block {
+        margin: 28px 0 0 0;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+      }
+    }
+  }
+
+  #portfolio {
+    .container {
+      .portfolio_list {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+      }
+    }
+  }
+}
