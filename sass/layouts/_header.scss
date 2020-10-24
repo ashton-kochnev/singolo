@@ -9,6 +9,9 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 29px 40px 35px 40px;
+    .hamburger {
+      display: none;
+    }
     .logo_link {
       text-decoration: none;
       font-size: 25px;

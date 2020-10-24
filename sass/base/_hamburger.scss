@@ -1,8 +1,7 @@
 .hamburger {
-  display: none;
-  position: relative;
   width: 25px;
   height: 20px;
+  transition: all 0.4s;
   &_line {
     display: block;
     height: 3px;
@@ -11,24 +10,8 @@
     border-radius: 5px;
     margin-bottom: 6px;
   }
-  // &::before {
-  //   content: "";
-  //   top: 0;
-  //   left: 0;
-  //   height: 3px;
-  //   width: 100%;
-  //   background: #fff;
-  //   border-radius: 5px;
-  //   position: absolute;
-  // }
-  // &::after {
-  //   content: "";
-  //   bottom: 0;
-  //   left: 0;
-  //   height: 3px;
-  //   width: 100%;
-  //   background: #fff;
-  //   border-radius: 5px;
-  //   position: absolute;
-  // }
+}
+.hamburger_active {
+  transition: all 0.4s;
+  transform: rotate(-90deg);
 }

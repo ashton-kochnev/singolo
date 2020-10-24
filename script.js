@@ -1,4 +1,27 @@
+window.addEventListener('DOMContentLoaded', () => {
 
+// Hamburger
+
+    const menu = document.querySelector('.header_navigation'),
+    menuItem = document.querySelectorAll('.navigation_link'),
+    hamburger = document.querySelector('.hamburger');
+    logo = document.querySelector('.logo');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('hamburger_active');
+        menu.classList.toggle('header_navigation-active');
+        logo.classList.toggle('logo_active');
+    });
+
+    menuItem.forEach(item => {
+        item.addEventListener('click', () => {
+            hamburger.classList.toggle('hamburger_active');
+            menu.classList.toggle('header_navigation-active');
+        });
+    });
+
+
+    
 //Menu scroll
 
 document.addEventListener('scroll', onScroll);
@@ -55,3 +78,8 @@ const selectClickedTag = (clickedTag) => {
 
 
 addTagsClickHandler();
+
+
+});
+
+
