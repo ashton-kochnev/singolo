@@ -1,9 +1,10 @@
 @media screen and (max-width: 1021px) {
   #home {
-    .www {
-      height: 363px;
-      margin: 40px 0;
-      background: url("../../image/slider-content.png") center center / contain no-repeat;
+    .container {
+      padding: 40px;
+      .phone {
+        height: 363px;
+      }
     }
   }
   #services {

@@ -68,12 +68,10 @@
     border: none;
     padding-top: 74px;
     .container {
-      padding: 20px 40px;
-      .www {
+      padding: 20px 10px;
+      .phone {
         height: 177px;
-        margin: 0;
-        background: url("../../image/slider-content.png") center center /
-          contain no-repeat;
+        margin: 0px 10px;
       }
     }
   }
@@ -103,9 +101,6 @@
           display: none;
         }
       }
-      .portfolio_form {
-        margin: 15px 0 20px 0;
-      }
     }
   }
   footer {
@@ -115,6 +110,17 @@
       }
       .footer_list {
         margin: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 343px) {
+  #portfolio {
+    .container {
+      .portfolio_button .button {
+        font-size: 11px;
+        padding: 3px;
       }
     }
   }

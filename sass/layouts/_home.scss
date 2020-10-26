@@ -2,9 +2,21 @@
   border-bottom: 6px solid #ea676b;
   background-color: $color-primary;
   padding-top: 108px;
-  .www {
-    height: 483px;
-    margin: 54px 0 57px 0;
-    background: url("../../image/slider-content.png") center center / contain no-repeat;
+  .container {
+    display: flex;
+    align-items: center;
+    padding: 54px 40px 57px;
+    .phone {
+      height: 483px;
+      width: 100%;
+      background: url("../image/slider-content.png") center center / contain
+        no-repeat;
+    }
+    .arrow-left {
+      cursor: pointer;
+    }
+    .arrow-right {
+      cursor: pointer;
+    }
   }
 }
