@@ -1,12 +1,15 @@
 @media screen and (max-width: 1021px) {
-  #home {
-    .container {
-      padding: 40px;
-      .phone {
-        height: 363px;
-      }
-    }
+#home {
+  .slide-red img, .slide-blue img {
+    height: 447px;
   }
+  .btn-prev {
+    left: 30px;
+  }
+  .btn-next {
+    right: 30px;
+  }
+}
   #services {
     .container {
       padding: 39px 40px 25px 40px;

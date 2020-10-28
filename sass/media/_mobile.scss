@@ -64,15 +64,17 @@
     }
   }
 
+
   #home {
-    border: none;
     padding-top: 74px;
-    .container {
-      padding: 20px 10px;
-      .phone {
-        height: 177px;
-        margin: 0px 10px;
-      }
+    .slide-red img, .slide-blue img {
+      height: 218px;
+    }
+    .btn-prev {
+      left: 10px;
+    }
+    .btn-next {
+      right: 10px;
     }
   }
 

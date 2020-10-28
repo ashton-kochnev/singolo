@@ -21,7 +21,6 @@
       grid-template-rows: repeat(2, 1fr);
       .services_block-item {
         display: flex;
-        justify-content: center;
         .services_block-text {
           color: $color-text;
           padding: 0 20px 20px 20px;
@@ -32,7 +31,7 @@
           }
           & p {
             max-width: 220px;
-            max-height: 77px;
+            max-height: 70px;
             overflow: hidden;
             font-size: 12px;
             line-height: 22px;

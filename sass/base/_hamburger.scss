@@ -1,7 +1,7 @@
 .hamburger {
   width: 25px;
   height: 20px;
-  transition: all 0.4s;
+  transition: all 0.8s;
   &_line {
     display: block;
     height: 3px;
@@ -12,6 +12,6 @@
   }
 }
 .hamburger_active {
-  transition: all 0.4s;
+  transition: all 0.8s;
   transform: rotate(-90deg);
 }
