@@ -64,11 +64,13 @@
     }
   }
 
-
   #home {
-    padding-top: 74px;
-    .slide-red img, .slide-blue img {
-      height: 218px;
+    position: relative;
+    top: 74px;
+    .slide-red img,
+    .slide-blue img {
+      height: 100%;
+      width: 100%;
     }
     .btn-prev {
       left: 10px;
@@ -79,6 +81,8 @@
   }
 
   #services {
+    position: relative;
+    top: 74px;
     .container {
       padding: 25px 30px 0 30px;
       .services_block {
@@ -93,6 +97,8 @@
 
   #portfolio {
     border: none;
+    position: relative;
+    top: 74px;
     .container {
       padding: 42px 30px;
       .portfolio_list {
@@ -106,6 +112,8 @@
     }
   }
   footer {
+    position: relative;
+    top: 74px;
     .container {
       .footer_text {
         display: none;

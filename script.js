@@ -73,7 +73,7 @@ function onScroll() {
     const links = document.querySelectorAll('.navigation_link a');
 
     section.forEach((el) => {
-        if (el.offsetTop - 95 <= curPos && (el.offsetTop + el.offsetHeight) > curPos) {
+        if (el.offsetTop <= curPos && (el.offsetTop + el.offsetHeight) > curPos) {
             links.forEach((a) => {
                 a.classList.remove('navigation_link-active');
                 if (el.getAttribute('id') === a.getAttribute('href').substring(1)) {
