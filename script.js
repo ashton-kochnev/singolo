@@ -84,32 +84,39 @@ function onScroll() {
     });
 }
 
-//Tabs
 
-const addTagsClickHandler = () => {
-    document.querySelector('.portfolio_button').addEventListener('click', (e) => {
-        if (e.target.classList.contains('button')) {
-            const clickedTag = e.target;
-            removeSelectedTags();
-            selectClickedTag(clickedTag);
-        } 
-    });
-};
+//Suflle
 
-const removeSelectedTags = () => {
-    let tags = document.querySelectorAll('.portfolio_button .button');
-    tags.forEach(button => {
-        button.classList.remove('button_active');
-    });
-};
-
-const selectClickedTag = (clickedTag) => {
-    clickedTag.classList.add('button_active');
-};
-
-addTagsClickHandler();
-
-
+const btn = document.querySelector('.portfolio_button');
+const portfolio = document.querySelector('.portfolio_list');
+let arr1 = portfolio.querySelectorAll('div');
+let a = 0;
+let arr2 = [];
+for(let i = arr1.length - 1; i >= 0; i--){
+        arr2[i] = a;
+}
+btn.querySelectorAll('span').forEach(el => {
+el.addEventListener('click', (event) =>{
+    btn.querySelectorAll('span').forEach(el => el.classList.remove('button_active'));
+    event.target.classList.add('button_active');
+    portfolio.querySelectorAll('div').forEach(el => el.remove());
+    for (var i = arr1.length - 1; i > 0; i--) {
+            let j = Math.floor(Math.random() * (i + 1));
+            let temp = arr1[i];
+            arr1[i] = arr1[j];
+            arr1[j] = temp;
+        }
+    while (i < arr1.length) {
+        let j = Math.floor(Math.random() * (arr1.length));
+        if (arr2[j] == a){
+            arr2[j] = a + 1;
+            portfolio.prepend(arr1[j]);
+            ++i;
+        }
+    }
+    ++a;   
+});
+});
 });
 
 
